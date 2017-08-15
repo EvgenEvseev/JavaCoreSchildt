@@ -13,4 +13,4 @@ public class ByteUShift {
         System.out.println("(b&0xff)>>4=0x"+hex[(e>>4)&0x0f]+hex[e&0x0f]);
         }
     }
-
+//
