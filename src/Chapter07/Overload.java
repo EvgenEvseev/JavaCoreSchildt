@@ -14,7 +14,7 @@ class OverloadDemo{
     }
     //Перегружаемый метод проверяющий наличие параметра типа double
     double test(double a){
-        System.out.println("doublt a: "+a);
+        System.out.println("double a: "+a);
         return a*a;
     }
 }
