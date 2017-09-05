@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameLogic {
-    public static void main(String[] args) {
+    public void start (){
         Scanner scan = new Scanner(System.in);
         Random rand = new Random();
         System.out.println("Добро пожаловать в игру крестики-нолики, для первого хода укажите ячейку с помощью клавиш 1-9");
