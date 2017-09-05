@@ -36,7 +36,7 @@ public class GameLogic {
             System.out.println("Ход компьютера");
             int ran = rand.nextInt(9);
             Field.mass[ran]="o";
-            Field.show();
+            Field.show2();
             if(
         Objects.equals(Field.mass[0], "o") & Objects.equals(Field.mass[1], "o") & Objects.equals(Field.mass[2], "o") |
         Objects.equals(Field.mass[3], "o") & Objects.equals(Field.mass[4], "o") & Objects.equals(Field.mass[5], "o") |
