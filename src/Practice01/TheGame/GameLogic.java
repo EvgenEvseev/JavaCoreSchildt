@@ -15,7 +15,7 @@ public class GameLogic {
         for (; ; ) {
             System.out.println("Ваш ход");
             int n = scan.nextInt() - 1;
-            if (n<10&n>0) {
+            if (n<9&n>-1) {
                 if (!Objects.equals(Field.mass[n], "x") & !Objects.equals(Field.mass[n], "o"))
                     Field.mass[n] = "x";
                 else {
