@@ -15,10 +15,16 @@ public class GameLogic {
         for (; ; ) {
             System.out.println("Ваш ход");
             int n = scan.nextInt() - 1;
-            if (!Objects.equals(Field.mass[n], "x") & !Objects.equals(Field.mass[n], "o"))
-                Field.mass[n] = "x";
+            if (n<10&n>0) {
+                if (!Objects.equals(Field.mass[n], "x") & !Objects.equals(Field.mass[n], "o"))
+                    Field.mass[n] = "x";
+                else {
+                    System.out.println("поле занято");
+                    continue;
+                }
+            }
             else {
-                System.out.println("поле занято");
+                System.out.println("Введите число от 1 до 9 ");
                 continue;
             }
             Field.show();
