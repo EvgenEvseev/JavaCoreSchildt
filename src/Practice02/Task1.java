@@ -44,9 +44,12 @@ aver - среднее арифметическое
 
      public void find(Integer element){
          for(int i=0;i<size();i++){
-             if(element==get(i)) System.out.println("Элемент найден по индексу : "+i);
-             else System.out.println("\nЭлемент не найден");
-             break;
+             if(element==get(i)) {System.out.println("Элемент "+element+" найден по индексу : "+i);
+             break;}
+             else if(i!=size()-1)continue;
+             else {
+                 System.out.println("Элемент "+element+" не найден ");
+             break;}
          }
      }
 
@@ -86,7 +89,9 @@ col.remDec((Integer)80);
 col.remDec(6);
         System.out.println(col);
 col.find(3);
+col.find(44);
 col.find((Integer)60);
+col.find((Integer)666);
 
 col.aver();
         System.out.println("Максимум - " +Collections.max(col));
