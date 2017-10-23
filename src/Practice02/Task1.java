@@ -5,7 +5,7 @@ addInc(индекс, значение) и addInc(значение) - добав�
 remDec(индекс) и remDec(значение)- удаление элемента.
 find(индекс) и find(значение)- поиск элемента.
 aver - среднее арифметическое
-
+максимум и минимум из статичных методов Collections
  */
  class Colletion01 extends ArrayList<Integer> {
 
@@ -54,7 +54,7 @@ aver - среднее арифметическое
      }
 
      public void find(int index){
-         if(index>size()) System.out.println("\nРазмер динамического массива меньше чем "+index);
+         if(index>size()-1) System.out.println("\nРазмер динамического массива меньше чем "+index);
          else
         System.out.print("Элемент по индексу "+index+" имеет значение "+get(index));
      }
@@ -94,9 +94,8 @@ col.find((Integer)60);
 col.find((Integer)666);
 
 col.aver();
-        System.out.println("Максимум - " +Collections.max(col));
-        System.out.println("Минимум - " +Collections.min(col));
-
+System.out.println("Максимум - " +Collections.max(col));
+System.out.println("Минимум - " +Collections.min(col));
 System.out.println(col);
     }
 }
