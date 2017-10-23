@@ -89,8 +89,8 @@ col.find(3);
 col.find((Integer)60);
 
 col.aver();
-Collections.max(col);
-Collections.min(col);
+        System.out.println("Максимум - " +Collections.max(col));
+        System.out.println("Минимум - " +Collections.min(col));
 
 System.out.println(col);
     }
