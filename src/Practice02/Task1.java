@@ -7,9 +7,9 @@ find(индекс) и find(значение)- поиск элемента.
 aver - среднее арифметическое
 максимум и минимум из статичных методов Collections
  */
- class Colletion01 extends ArrayList<Integer> {
+ class Collect extends ArrayList<Integer> {
 
-     public void addInc(int index, Integer element) {
+     void addInc(int index, Integer element) {
          if(element==null) System.out.println("В коллекции не допускается значение null");
          else
          add(0);
@@ -18,7 +18,7 @@ aver - среднее арифметическое
          }
      }
 
-     public void addInc(Integer element) {
+     void addInc(Integer element) {
          if(element==null) System.out.println("В коллекции не допускается значение null");
          else
          add(0);
@@ -27,7 +27,7 @@ aver - среднее арифметическое
          }
      }
 
-     public void remDec(int index){
+     void remDec(int index){
          int j=get(index);
          remove(index);
          for (int i = 0; i < size(); i++) {
@@ -35,14 +35,14 @@ aver - среднее арифметическое
          }
      }
 
-     public void remDec(Integer element){
+     void remDec(Integer element){
          if(remove(element))
          for (int i = 0; i < size(); i++)
              set(i, get(i) - element);
          else System.out.println("Элемент "+element+" для удаления не найден");
      }
 
-     public void find(Integer element){
+     void find(Integer element){
          for(int i=0;i<size();i++){
              if(element==get(i)) {System.out.println("Элемент "+element+" найден по индексу : "+i);
              break;}
@@ -53,13 +53,13 @@ aver - среднее арифметическое
          }
      }
 
-     public void find(int index){
+     void find(int index){
          if(index>size()-1) System.out.println("\nРазмер динамического массива меньше чем "+index);
          else
         System.out.print("Элемент по индексу "+index+" имеет значение "+get(index));
      }
 
-     public void aver(){
+     void aver(){
          int sum=0;
          for(int i=0;i<size();i++)sum+=get(i);
          int ave=sum/size();
@@ -71,7 +71,7 @@ aver - среднее арифметическое
 
 public class Task1 {
     public static void main(String[] args) {
-Colletion01 col=new Colletion01();
+Collect col=new Collect();
 
 col.addInc(0,10);
 col.addInc(1,20);
