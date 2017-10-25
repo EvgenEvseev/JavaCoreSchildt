@@ -47,5 +47,32 @@ Collect2 array=new Collect2(7);
         array.addnew(2,55889);
         array.addnew(2222,2222);
         System.out.println(array);
+
+Collect2 array16= new Collect2();
+        array16.addnew(0);
+        array16.addnew(1);
+        array16.addnew(2);
+        array16.addnew(3);
+        array16.addnew(4);
+        array16.addnew(5);
+        array16.addnew(6);
+        array16.addnew(7);
+        array16.addnew(8);
+        array16.addnew(9);
+        array16.addnew(10);
+        array16.addnew(11);
+        array16.addnew(12);
+        array16.addnew(13);
+        array16.addnew(14);
+        array16.addnew(15);
+        array16.addnew(111);
+        array16.addnew(222);
+        array16.addnew(333);
+
+        array16.addnew(1,55555);
+        array16.addnew(2,66666);
+
+        array16.addnew(22222,23453);
+        System.out.println(array16);
     }
 }
