@@ -11,7 +11,7 @@ public class SpliteratorDemo {
         vals.add(2.0);
         vals.add(3.0);
         vals.add(4.0);
-        vals.add(5.0);
+        vals.add(5.0); 
 
         //вызываем метод tryAdvance() для вывода содержимого списочного массива
         System.out.print("Содержимое списочного массива vals:\n");

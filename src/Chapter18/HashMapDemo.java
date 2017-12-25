@@ -11,12 +11,12 @@ public class HashMapDemo {
         hm.put("Джейн Бейкер",new Double(1378.00));
         hm.put("Тод Холл",new Double(99.22));
         hm.put("Ральф Смит",new Double(-19.08));
-
+        int n=0;
         //получаем множество записей
         Set<Map.Entry<String,Double>>set = hm.entrySet();
 
         //выводим множество записей
-        for(Map.Entry<String,Double>me:set){
+        for(Map.Entry<String, Double> me:set){
             System.out.print(me.getKey()+": ");
             System.out.println(me.getValue());
         }

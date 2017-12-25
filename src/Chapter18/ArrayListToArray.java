@@ -13,8 +13,8 @@ public class ArrayListToArray {
         al.add(4);
         System.out.println("Содержимое списочного массива al: "+al);
         //получить обычный массив
-        Integer mass[]= new Integer[al.size()];
-        mass = al.toArray(mass);
+      Integer mass[]=new Integer[al.size()];
+      mass=al.toArray(mass);
 
         int sum=0;
         //суммируем элементы массива

@@ -3,7 +3,7 @@ import java.util.*;
 public class HashSetDemo {
     public static void main(String[] args) {
         //создаем хэш-множество
-        HashSet<String>HS=new HashSet<String>();
+        LinkedHashSet<String>HS=new LinkedHashSet<String>();
 
         //вводим элементы в это множество
         HS.add("Бета");

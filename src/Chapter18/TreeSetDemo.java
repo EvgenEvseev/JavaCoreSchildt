@@ -14,7 +14,6 @@ public class TreeSetDemo {
         TS.add("D");
         TS.add("F");
         TS.add("E");
-
         System.out.println(TS);
         // Методы из интерфейса NavigableSet
         System.out.println("Subset  "+TS.subSet("C","F"));

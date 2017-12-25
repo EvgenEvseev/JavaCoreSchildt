@@ -29,8 +29,7 @@ public class LinkedListDemo {
         System.out.println("Содержимое LL после удаления первого и последнего элемента списка: "+LL);
 
         //получить и присвоить значение
-        String val = LL.get(2);
-        LL.set(2,val +" изменено");
+        LL.set(2,LL.get(2) +" изменено");
 
         System.out.println("Содержимое после изменения: "+LL);
     }
